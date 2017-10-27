@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.jaydenxiao.common.commonwidget.NormalTitleBar
+        android:id="@+id/ntb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/wdgd_btn_operate_paidan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/wdgd_detail_btn"
+            android:gravity="center"
+            android:text="派单"
+            android:textColor="@color/text_gray_white"
+            android:textSize="@dimen/font_middle" />
+
+        <Button
+            android:id="@+id/wdgd_btn_operate_jiedan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-1dp"
+            android:layout_weight="1"
+            android:background="@drawable/wdgd_detail_btn"
+            android:gravity="center"
+            android:text="接单"
+            android:textColor="@color/text_gray_white"
+            android:textSize="@dimen/font_middle" />
+
+        <Button
+            android:id="@+id/wdgd_btn_operate_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-1dp"
+            android:layout_weight="1"
+            android:background="@drawable/wdgd_detail_btn"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/text_gray_white"
+            android:textSize="@dimen/font_middle" />
+
+        <Button
+            android:id="@+id/wdgd_btn_operate_finish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-1dp"
+            android:layout_weight="1"
+            android:background="@drawable/wdgd_detail_btn"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/text_gray_white"
+            android:textSize="@dimen/font_middle" />
+    </LinearLayout>
+
+    <com.aspsine.irecyclerview.IRecyclerView
+        android:id="@+id/irc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:loadMoreEnabled="false"
+        app:refreshEnabled="true"
+        app:refreshHeaderLayout="@layout/layout_irecyclerview_refresh_header" />
+</LinearLayout>

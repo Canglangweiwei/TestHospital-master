@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:23.+'                                    // v4
+    compile 'com.android.support:appcompat-v7:23.+'                                 // v7
+    compile 'com.android.support:design:23.+'                                       // design
+    compile 'com.android.support:cardview-v7:23.+'                                  // CardView
+    compile 'com.android.support:recyclerview-v7:23.+'                              // RecyclerView
+
+    // 极光推送
+    compile files('libs/jcore-android-1.1.7.jar')
+    compile files('libs/jpush-android-3.0.9.jar')
+
+    compile 'com.commit451:PhotoView:1.2.4'                                         // 图片缩放
+    compile 'com.android.support:multidex:1.0.0'                                    // 分包
+    compile 'com.google.code.gson:gson:2.8.2'                                       // gson
+    compile 'com.jakewharton:butterknife:7.0.1'                                     // view注解
+    compile 'com.github.bumptech.glide:glide:3.6.1'                                 // 显示图片框架
+    compile 'com.squareup.picasso:picasso:2.5.2'                                    // 显示图片框架
+    compile 'com.bartoszlipinski.recyclerviewheader:library:1.2.1'              // RecyclerView中headerView
+    compile 'com.aurelhubert:ahbottomnavigation:1.2.3'                              // 底部导航栏
+    compile 'org.litepal.android:core:1.5.1'                                        //  LitePal(DataSupport)
+    compile 'com.youth.banner:banner:1.4.9'                                         // 广告轮播图控件
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- flat ui 风格色-->
+    <!-- 绿松石 -->
+    <color name="turquoise">#1abc9c</color>
+    <!-- 绿海 -->
+    <color name="green_sea">#16a085</color>
+    <!-- 翡翠 -->
+    <color name="emerald">#2ecc71</color>
+    <!-- 玉 -->
+    <color name="nephritis">#27ae60</color>
+    <!-- 彼得河 -->
+    <color name="peter_river">#3498db</color>
+    <!-- 伯利兹蓝洞 -->
+    <color name="belize_hole">#2980b9</color>
+    <!-- 紫水晶 -->
+    <color name="amethyst">#9b59b6</color>
+    <!-- 紫藤 -->
+    <color name="wisteria">#8e44ad</color>
+    <!-- 湿沥青 -->
+    <color name="wet_asphalt">#34495e</color>
+    <!-- 午夜蓝 -->
+    <color name="midnight_blue">#2c3e50</color>
+    <!-- 向日葵 -->
+    <color name="sun_flower">#f1c40f</color>
+    <!-- 橙 -->
+    <color name="orange">#f39c12</color>
+    <!-- 胡萝卜 -->
+    <color name="carrot">#e67e22</color>
+    <!-- 南瓜 -->
+    <color name="pumpkin">#d35400</color>
+    <!-- 茜草红 -->
+    <color name="alizarin">#e74c3c</color>
+    <!-- 石榴 -->
+    <color name="pomegranate">#c0392b</color>
+    <!-- 云色 -->
+    <color name="clouds">#ecf0f1</color>
+    <!-- 银色 -->
+    <color name="silver">#bdc3c7</color>
+    <!-- 混凝土 -->
+    <color name="concrete">#95a5a6</color>
+    <!-- 石棉 -->
+    <color name="asbestos">#7f8c8d</color>
+</resources>

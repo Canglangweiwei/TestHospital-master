@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jaydenxiao.common.commonwidget.NormalTitleBar
+        android:id="@+id/ntb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="8dp">
+
+                <EditText
+                    android:id="@+id/add_gdfinish_edit_miaoshu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/windows_bg"
+                    android:gravity="left|top"
+                    android:hint="请输入您的描述"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="3dp"
+                    android:lines="8"
+                    android:padding="8dp"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/font_small" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/add_gdfinish_edit_miaoshu"
+                    android:layout_alignEnd="@id/add_gdfinish_edit_miaoshu"
+                    android:layout_alignRight="@id/add_gdfinish_edit_miaoshu"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/left"
+                    android:textSize="10sp"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+
+            <com.jaydenxiao.common.commonwidget.NoScrollGridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="6dp" />
+
+            <Button
+                android:id="@+id/btn_gongdan_wc"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="55dp"
+                android:background="@drawable/btn_black_selector"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_middle" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

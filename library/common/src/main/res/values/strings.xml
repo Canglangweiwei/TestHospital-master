@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">common</string>
+    <string name="right_title">右标题</string>
+    <string name="loading">加载中，请稍后……</string>
+    <string name="press_twice_exit">再次按返回键退出</string>
+    <string name="exit_directly">直接退出</string>
+</resources>
